@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.earth {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(90deg,#1CB5E0 0%, #000851 100%) ;
+    border-radius: 50%;
+    position: relative;
+}
+.orbit {
+    width: 300px;
+    height: 300px;
+    border: 1px dashed rgba(255,255,255,0.3);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: rotate 8s linear infinite;
+}
+.moon {
+    width: 30px;
+    height: 30px;
+    background: linear-gradient(to left bottom, #9aa1ab 100%, #a7b0bb, #b3c0ca, #c0d0da, #cde0e9);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+}
+@keyframes rotate {
+    from { 
+        transform: translate(-50%, -50%) rotate(0deg); 
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg); 
+    }
+}
