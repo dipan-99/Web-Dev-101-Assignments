@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: auto;
+}
+.title{
+    width: fit-content;
+    margin: auto;
+    font-size: 40px;
+    text-decoration: underline;
+}
+.dog-contain {
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    grid-template-rows: repeat(2, 220px);
+    margin: auto;
+    gap: 20px;
+}
+.box img{
+    width: 360px;
+    height: 220px;
+}
